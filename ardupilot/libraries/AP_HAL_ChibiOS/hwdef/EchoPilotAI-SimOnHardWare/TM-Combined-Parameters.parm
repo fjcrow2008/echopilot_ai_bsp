@@ -1,0 +1,81 @@
+#Default setup for comms with companion computer
+SERIAL1_PROTOCOL 2
+SERIAL1_BAUD 115
+SERIAL2_PROTOCOL 2
+SERIAL2_BAUD 500
+SERIAL3_PROTOCOL 5
+SERIAL3_OPTIONS 4
+SERIAL3_BAUD 230
+SERIAL4_BAUD 57
+SERIAL4_PROTOCOL 2
+
+#Default setup for voltage/current monitoring
+BATT_VOLT_PIN 16
+BATT_CURR_PIN 17
+BATT2_VOLT_PIN 14
+BATT2_CURR_PIN 15
+
+# Troublemaker Combined Parameters
+#
+
+# Airspeed (pitot)
+
+ARSPD_DEVID			141321
+ARSPD_OFFSET		112.8036
+ARSPD_TYPE			1
+
+# battery monitor (Power Zero)
+
+BATT_CAPACITY		10000
+BATT_LOW_VOLT		19.2
+BATT_MONITOR		4
+BATT_VOLT_MULT		15.30
+BATT_AMP_PERVLT		50
+
+# fuel gauge
+
+BATT3_FL_PIN		4
+BATT3_FL_V_MULT		0.417
+BATT3_FL_VLT_MIN	0.49
+BATT3_MONITOR		24
+
+# range finder (LiDAR)
+
+RNGFND1_ADDR		102
+RNGFND1_GNDCLEAR	5
+RNGFND1_MAX_CM		9500
+RNGFND1_MIN_CM		5
+RNGFND1_ORIENT		25
+
+# RPM sensor
+
+RPM1_MAX			7800
+RPM1_MIN			10
+RPM1_PIN			62
+RPM1_TYPE			2
+
+# engine temperature
+
+TEMP1_TYPE          2
+TEMP1_ADDR			96
+TEMP1_BUS			1
+TEMP1_SRC			3
+TEMP1_SRC_ID		1
+
+# Drone ID
+
+DID_ENABLE          1
+DID_OPTIONS         1
+DID_MAVPORT         4
+DID_CANDRIVER       0
+
+# RTL Autoland support for DO_LAND_START
+RTL_AUTOLAND        3
+
+#
+# set simulation starting point to Ridgely Airfield
+#
+SIM_OPOS_LAT    38.9696028
+SIM_OPOS_LNG    -75.8678806
+SIM_OPOS_ALT    0
+SIM_OPOS_HDG    100.0

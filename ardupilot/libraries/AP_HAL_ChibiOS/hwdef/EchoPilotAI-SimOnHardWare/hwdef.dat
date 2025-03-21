@@ -1,0 +1,16 @@
+# Firmware suitable for flashing EchoPilot AI to experience Simulation-on-Hardware
+
+include ../EchoPilotAI/hwdef.dat
+include ../include/SimOnHW.inc
+
+define AP_GPS_BACKEND_DEFAULT_ENABLED 0
+define AP_RANGEFINDER_BACKEND_DEFAULT_ENABLED 0
+define HAL_HIGH_LATENCY2 0
+
+# short board name override (23 chars)
+define CHIBIOS_SHORT_BOARD_NAME "EchoPilotAISimOnHW"
+
+# bootloader embedding / bootloader flashing not available
+define AP_BOOTLOADER_FLASHING_ENABLED 0
+
+AUTOBUILD_TARGETS Plane
